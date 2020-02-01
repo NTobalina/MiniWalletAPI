@@ -14,14 +14,6 @@ El ejercicio consiste en que programes endpoints para:
 - Descontar saldo del monedero (un cobro).
 - Recargar dinero en ese bono a través de un servicio de pago de terceros.
 
-Para que puedas ir al grano, te damos un proyecto maven con una aplicación Spring Boot, con las dependencias básicas y una
-base de datos H2. Tienes perfiles de develop y test.
-
 Tienes también una implementación del servicio que implementaría la pasarela de pago real (ThirdPartyPaymentService).
 Esa parte no tienes que programarla, asume que el servicio hace la llamada remota dada una cantidad de dinero.
 Está pensado para que devuelva error bajo ciertas condiciones.
-
-Ten en cuenta que es un servicio que conviviría en un entorno de microservicios y alta concurrencia.
-
-Le puedes dedicar el tiempo que quieras, pero hemos estimado que 3-4 horas es suficiente para demostrar  [los requisitos del puesto.](OFERTA.md#requisitos)
- No hace falta que lo documentes pero puedes anotar todo lo que quieras como explicación o justificación de lo que hagas o dejes sin hacer.
