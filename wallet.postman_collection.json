@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "482428e9-3af2-4f0d-b309-d54920f25c01",
+		"name": "exercise-wallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Make Payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"amount\": 5,\r\n  \"comment\": \"prueba prueba\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/api/wallet/make-payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"wallet",
+						"make-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Funds",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"amount\": 20,\r\n  \"thirdPartyPaymentGateway\": \"PAYPAL\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/api/wallet/add-funds",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"wallet",
+						"add-funds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"type": "text",
+						"value": "2",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/api/wallet/check-balance?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"wallet",
+						"check-balance"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
