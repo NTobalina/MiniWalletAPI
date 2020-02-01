@@ -64,7 +64,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-			<!-- Activate integration tests as **IT.java -->
+			<!-- Activate integration lab as **IT.java -->
 			<plugin>
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<configuration>
